@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.H Raophin</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div class="user">
+        <img src="images/Logo.png" alt="">
+        <h3 class="nickname">Fashion Composite</h3>
+        <h2 class="nickname">Products Ltd</h3>
+        <p class="post">(A Concern Of Fashion Makers Group)</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">Quality Department</a></li>
+            <li><a href="#education">Production Department</a></li>
+            <li><a href="#portfolio">Finishing Department</a></li>
+            <li><a href="#contact">About</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+    <h1>Quality Department <br> <p><span> (All Accesorries Info)</span></p></h1>
+   
+<div> 
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search By Style Number" title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th>Style No</th>
+    <th>Image</th>
+    <th>Comments</th>
+    <th>OKEO Tex</th>
+    <th>Folding Level</th>
+    <th>Flat Level</th>
+    <th>Remarks</th>
+  </tr>
+  <tr>
+    <td>209041</td>
+    <td><img src="images/T.png" width="50%" height="auto" alt=""></td>
+    <td>100% Cotton</td>
+    <td>YES</td>
+    <td>NO</td>
+    <td>YES</td>
+    <td>NO</td>
+  </tr>
+  <tr>
+    <td>207041</td>
+    <td>N/A</td>
+    <td>100% Cotton</td>
+    <td>YES</td>
+    <td>NO</td>
+    <td>YES</td>
+    <td>NO</td>
+  </tr>
+  <tr>
+    <td>202041</td>
+    <td>N/A</td>
+    <td>100% Cotton</td>
+    <td>YES</td>
+    <td>NO</td>
+    <td>YES</td>
+    <td>NO</td>
+  </tr>
+  <tr>
+    <td>203041</td>
+    <td>N/A</td>
+    <td>100% Cotton</td>
+    <td>YES</td>
+    <td>NO</td>
+    <td>YES</td>
+    <td>NO</td>
+  </tr>
+  <tr>
+    <td>204541</td>
+    <td>N/A</td>
+    <td>100% Cotton</td>
+    <td>YES</td>
+    <td>NO</td>
+    <td>YES</td>
+    <td>NO</td>
+  </tr>
+  <tr>
+    <td>224041</td>
+    <td>N/A</td>
+    <td>100% Cotton</td>
+    <td>YES</td>
+    <td>NO</td>
+    <td>YES</td>
+    <td>NO</td>
+  </tr>
+  <tr>
+    <td>204041</td>
+    <td>N/A</td>
+    <td>100% Cotton</td>
+    <td>YES</td>
+    <td>NO</td>
+    <td>YES</td>
+    <td>NO</td>
+  </tr>
+  <tr>
+    <td>208941</td>
+    <td>N/A</td>
+    <td>100% Cotton</td>
+    <td>YES</td>
+    <td>NO</td>
+    <td>YES</td>
+    <td>NO</td>
+  </tr>
+</table>
+
+<script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }       
+      }
+    }
+    </script>
+</div>
+    <a href="#about"><button class="btn">View Assortment</button></a>
+
+</section>
+
+<!-- home section ends -->
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
